@@ -1,5 +1,5 @@
 function Page() {
-  return <div>Hello zabanimo</div>;
+  return null;
 }
 
 export default Page;
