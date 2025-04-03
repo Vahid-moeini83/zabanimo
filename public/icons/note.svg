@@ -1,0 +1,25 @@
+<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/linear/note" filter="url(#filter0_d_1_2088)">
+<g id="vuesax/linear/note_2">
+<g id="note">
+<path id="Vector" d="M12.9844 6.32812V9.32812" stroke="#F5F5F5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M20.9844 6.32812V9.32812" stroke="#F5F5F5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M11.9844 17.3281H19.9844" stroke="#F5F5F5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M11.9844 21.3281H16.9844" stroke="#F5F5F5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M20.9844 7.82812C24.3144 8.00813 25.9844 9.27812 25.9844 13.9781V20.1581C25.9844 24.2781 24.9844 26.3381 19.9844 26.3381H13.9844C8.98438 26.3381 7.98438 24.2781 7.98438 20.1581V13.9781C7.98438 9.27812 9.65438 8.01812 12.9844 7.82812H20.9844Z" stroke="#F5F5F5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1_2088" x="-4.01562" y="-4.67188" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.41 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2088"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2088" result="shape"/>
+</filter>
+</defs>
+</svg>

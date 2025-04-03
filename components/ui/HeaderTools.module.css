@@ -1,0 +1,16 @@
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1240px) {
+  .tools {
+    gap: 4px;
+  }
+}

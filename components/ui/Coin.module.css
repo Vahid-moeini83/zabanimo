@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper div {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: var(--color-yellow-600);
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper div {
+    font-size: 12px;
+  }
+}

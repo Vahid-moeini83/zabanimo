@@ -1,0 +1,135 @@
+@keyframes scale-up-tr {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 0%;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  font-size: 18px;
+  color: var(--color-white-800);
+}
+
+.item {
+  position: relative;
+}
+
+.item > a {
+  transition: all 0.3s;
+  transition-delay: 0.08s;
+}
+
+.item:hover > a {
+  color: var(--color-yellow-600);
+  text-shadow: 0px 0px 18px var(--color-yellow-600);
+}
+
+.chevron {
+  transition: all 0.6s;
+}
+
+.item:hover .chevron {
+  rotate: 180deg;
+}
+
+.menu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: var(--rounded-xs);
+  box-shadow: 0px 0px 4px 0px
+      color-mix(in srgb, var(--color-white-800) 25%, transparent),
+    0px 0px 14px 0px color-mix(in srgb, var(--color-white-800) 40%, transparent);
+}
+
+.dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  transition-delay: 0.07s;
+  width: 228px;
+  position: absolute;
+  top: 64px;
+  right: -16px;
+  padding: 24px;
+  backdrop-filter: blur(18.5px);
+  border-radius: var(--rounded-md);
+  border: 1px solid color-mix(in srgb, var(--color-gray-400) 25%, transparent);
+  background-color: color-mix(in srgb, var(--color-gray-600) 80%, transparent);
+}
+
+.item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.exam {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.exam li {
+  transition: all 0.3s;
+  color: var(--color-white-800);
+}
+
+.exam li:hover {
+  color: var(--color-yellow-600);
+}
+
+.soon {
+  position: absolute;
+  bottom: -14px;
+  rotate: -10deg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: var(--rounded-xxs);
+  border: 2px solid var(--color-red-800);
+  text-shadow: 0px 0px 20px var(--color-red-800);
+  box-shadow: 0px 0px 8px 4px var(--color-red-800);
+  background-color: color-mix(in srgb, var(--color-red-800) 60%, transparent);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1290px) {
+  .menu {
+    gap: 24px;
+  }
+
+  .item {
+    font-size: 14px;
+  }
+
+  .active {
+    padding: 8px 16px;
+  }
+
+  .dropdown {
+    width: 200px;
+  }
+
+  .soon {
+    width: 40px;
+    height: 16px;
+    font-size: 12px;
+  }
+}

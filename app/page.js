@@ -1,5 +1,7 @@
+import Intro from "./home/components/Intro";
+
 function Page() {
-  return null;
+  return <Intro />;
 }
 
 export default Page;

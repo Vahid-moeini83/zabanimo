@@ -1,5 +1,7 @@
 import DesktopHeader from "@/components/layout/DesktopHeader";
 import "./globals.css";
+import MobileHeader from "@/components/layout/MobileHeader";
+import MobileNav from "@/components/layout/MobileNav";
 
 export default function RootLayout({ children }) {
   return (
@@ -7,8 +9,10 @@ export default function RootLayout({ children }) {
       <body>
         <header>
           <DesktopHeader />
+          <MobileHeader />
+          <MobileNav />
         </header>
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

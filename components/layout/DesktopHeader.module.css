@@ -1,7 +1,9 @@
 .header {
+  z-index: 997;
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 20px;
   left: 0;
@@ -12,4 +14,32 @@
   backdrop-filter: blur(18.5px);
   background-color: color-mix(in srgb, var(--color-gray-600) 60%, transparent);
   border: 1px solid color-mix(in srgb, var(--color-gray-400) 25%, transparent);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1240px) {
+  .logo {
+    width: 92px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    display: none;
+  }
 }
