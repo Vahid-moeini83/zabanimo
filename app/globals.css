@@ -14,6 +14,7 @@
 
   /* colors */
   --color-black-800: #131313;
+  --color-black-600: #1d1d1d;
   --color-white-800: #f5f5f5;
 
   --color-gray-800: #282828;
@@ -79,6 +80,11 @@ body {
     rgba(152, 152, 152, 0.65) 14.45%,
     rgba(141, 141, 141, 0.5) 86.8%
   );
+}
+
+.disabled-button {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .preview-button {

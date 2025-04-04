@@ -1,7 +1,8 @@
-import DesktopHeader from "@/components/layout/DesktopHeader";
 import "./globals.css";
+import DesktopHeader from "@/components/layout/DesktopHeader";
 import MobileHeader from "@/components/layout/MobileHeader";
 import MobileNav from "@/components/layout/MobileNav";
+import FeaturesList from "@/components/ui/FeaturesList";
 
 export default function RootLayout({ children }) {
   return (

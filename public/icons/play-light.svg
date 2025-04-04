@@ -1,0 +1,17 @@
+<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/linear/play">
+<rect x="0.416016" y="0.5" width="68" height="68" rx="34" fill="#363636" fill-opacity="0.6"/>
+<rect x="0.416016" y="0.5" width="68" height="68" rx="34" fill="url(#paint0_linear_1_1717)" fill-opacity="0.2"/>
+<g id="vuesax/linear/play_2">
+<g id="play">
+<path id="Vector" d="M23.4805 34.5V28.6434C23.4805 21.3719 28.6297 18.3943 34.9305 22.03L40.0139 24.9583L45.0973 27.8866C51.3981 31.5223 51.3981 37.4776 45.0973 41.1134L40.0139 44.0417L34.9305 46.97C28.6297 50.6057 23.4805 47.628 23.4805 40.3566V34.5Z" fill="#E3E3E3"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_1717" x1="65.3146" y1="0.499995" x2="-5.89879" y2="8.57574" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3E3E3" stop-opacity="0.82"/>
+<stop offset="1" stop-color="#9F9F9F" stop-opacity="0.75"/>
+</linearGradient>
+</defs>
+</svg>

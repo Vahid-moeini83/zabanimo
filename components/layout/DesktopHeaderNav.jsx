@@ -5,6 +5,7 @@ import classes from "./DesktopHeaderNav.module.css";
 import { GoChevronDown } from "react-icons/go";
 import { usePathname } from "next/navigation";
 import AboutUs from "../ui/AboutUs";
+import SoonText from "../ui/SoonText";
 
 function DesktopHeaderNav() {
   const path = usePathname();
@@ -51,7 +52,7 @@ function DesktopHeaderNav() {
       </li>
       <li className={classes.item}>
         <Link href="#">JOINT</Link>
-        <span className={classes.soon}>به زودی</span>
+        <SoonText />
       </li>
     </ul>
   );

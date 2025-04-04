@@ -10,9 +10,15 @@ import "swiper/css/effect-fade";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { useMediaQuery } from "@mui/material";
+import { useState } from "react";
 
 function Intro() {
   const isInMobileSize = useMediaQuery("(max-width: 768px)");
+  const [activeIndex, setActiveIndex] = useState(0);
+  const slidesNumber = 8;
+
+  const isInFirstSlide = activeIndex === 0;
+  const isInLastSlide = activeIndex === slidesNumber - 1;
 
   return (
     <section>
@@ -32,6 +38,7 @@ function Intro() {
             clickable: false,
           }}
           slidesPerView={1}
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           className={classes.slider}
         >
           {[...Array(8)].map((_, index) => (
@@ -54,12 +61,24 @@ function Intro() {
               )}
             </SwiperSlide>
           ))}
-          <button className="navigation-button preview-button">
-            <Image src="icons/arrow.svg" width={24} height={16} alt="arrow" />
-          </button>
-          <button className="navigation-button next-button">
-            <Image src="icons/arrow.svg" width={24} height={16} alt="arrow" />
-          </button>
+          {!isInMobileSize && (
+            <button
+              className={`navigation-button preview-button ${
+                isInFirstSlide ? "disabled-button" : ""
+              }`}
+            >
+              <Image src="icons/arrow.svg" width={24} height={16} alt="arrow" />
+            </button>
+          )}
+          {!isInMobileSize && (
+            <button
+              className={`navigation-button next-button ${
+                isInLastSlide ? "disabled-button" : ""
+              }`}
+            >
+              <Image src="icons/arrow.svg" width={24} height={16} alt="arrow" />
+            </button>
+          )}
         </Swiper>
       </div>
     </section>

@@ -1,4 +1,5 @@
 .wrapper {
+  z-index: 997;
   position: fixed;
   bottom: 10px;
   right: 0;
@@ -19,34 +20,8 @@
     var(--color-black-800);
 }
 
-.wrapper ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.wrapper ul li a {
-  color: var(--color-white-800);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
 @media only screen and (min-width: 1025px) {
   .wrapper {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .wrapper img {
-    width: 36px;
-    height: 36px;
-  }
-
-  .wrapper ul li a {
-    font-size: 12px;
-    gap: 2px;
   }
 }
