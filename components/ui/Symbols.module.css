@@ -16,6 +16,12 @@
   color: var(--color-white-800);
 }
 
+@media only screen and (min-width: 1025px) {
+  .wrapper {
+    justify-content: flex-end;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .wrapper {
     gap: 20px;

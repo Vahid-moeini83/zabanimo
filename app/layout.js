@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 import DesktopHeader from "@/components/layout/DesktopHeader";
 import MobileHeader from "@/components/layout/MobileHeader";
@@ -14,6 +15,9 @@ export default function RootLayout({ children }) {
           <MobileNav />
         </header>
         <main>{children}</main>
+        <footer>
+          <Footer/>
+        </footer>
       </body>
     </html>
   );
