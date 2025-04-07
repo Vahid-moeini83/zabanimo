@@ -3,17 +3,17 @@
 import classes from "./LanguageBox.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import { Select, MenuItem } from "@mui/material";
+import { Select, MenuItem, useMediaQuery } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { languages } from "@/utils/localData";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const CustomSelect = styled(Select)((small) => ({
+const CustomSelect = styled(Select)((small, isInDesktopSize) => ({
   "& .MuiSelect-icon": {
-    left: small ? 2 : 12,
+    left: small && !isInDesktopSize ? 4 : 12,
     right: "unset",
-    width: small ? 20 : "",
-    width: small ? 20 : "",
+    width: small && isInDesktopSize ? 20 : "",
+    width: small && isInDesktopSize ? 20 : "",
     paddingBottom: "2px",
     color: "var(--color-gray-200)",
   },
@@ -25,10 +25,13 @@ const CustomSelect = styled(Select)((small) => ({
 export default function LanguageBox({ small = false }) {
   const [selected, setSelected] = useState("fa");
   const [searchValue, setSearchValue] = useState();
+  const isInDesktopSize = useMediaQuery("min-width: 1025px");
 
   return (
     <CustomSelect
-      className={`${classes.box} ${small ? classes.smallBox : ""}`}
+      className={`${classes.box} ${
+        small && !isInDesktopSize ? classes.smallBox : ""
+      }`}
       value={selected}
       onChange={(e) => setSelected(e.target.value)}
       IconComponent={ExpandMoreIcon}
