@@ -1,5 +1,8 @@
 .footer {
   margin-top: 80px;
+}
+
+.main {
   padding-top: 36px !important;
   padding-bottom: 38px !important;
   border-top: 1px solid var(--color-gray-400);
@@ -37,7 +40,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .footer {
+  .main {
     display: none;
   }
 }

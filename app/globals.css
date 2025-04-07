@@ -108,6 +108,16 @@ body {
   background-color: var(--color-gray-400);
 }
 
+/* sponsoer swiper */
+.custom-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  transition-timing-function: linear !important;
+}
+
+.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-right: 0 !important;
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: var(--container-width-md);

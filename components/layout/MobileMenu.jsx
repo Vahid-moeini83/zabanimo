@@ -6,6 +6,7 @@ import SocialMedia from "../ui/SocialMedia";
 import Symbols from "../ui/Symbols";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { useMenu } from "@/hooks/useMenu";
+import LanguageBox from "../ui/LanguageBox";
 
 function MobileMenu() {
   const { isOpen, handleOpen, handleClose } = useMenu();
@@ -28,6 +29,7 @@ function MobileMenu() {
             size={28}
             color="white"
           />
+          <LanguageBox small />
         </div>
         <div className={classes.main}>
           <div>

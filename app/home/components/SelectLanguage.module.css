@@ -1,0 +1,26 @@
+.wrapper {
+  margin-top: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.wrapper span {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-white-800);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    margin-top: 68px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .wrapper span {
+    font-size: 20px;
+    color: var(--color-white-800);
+  }
+}

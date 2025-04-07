@@ -1,0 +1,54 @@
+.wrapper {
+  margin-top: 90px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  color: var(--color-white-800);
+  margin-bottom: 54px;
+}
+
+.heading h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.heading span {
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.swiper {
+  text-align: center;
+}
+
+.slide img {
+  object-fit: cover;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    margin-top: 76px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .heading span {
+    font-size: 20px;
+  }
+}

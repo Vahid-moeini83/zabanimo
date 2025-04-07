@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Subscribe() {
   return (
-    <div className={`container ${classes.wrapper}`}>
+    <section className={`container ${classes.wrapper}`}>
       <div className={classes.count}>
         <span>123,126</span>
         مشترکین فعال
@@ -28,7 +28,7 @@ function Subscribe() {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

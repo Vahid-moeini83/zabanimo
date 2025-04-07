@@ -4,6 +4,9 @@ import DownloadBox from "./home/components/DownloadBox";
 import TeachingModels from "./home/components/TeachingModels";
 import Entertainments from "./home/components/Entertainments";
 import Subscribe from "./home/components/Subscribe";
+import Sponsors from "./home/components/Sponsors";
+import Teachers from "./home/components/Teachers";
+import SelectLanguage from "./home/components/SelectLanguage";
 
 function Page() {
   return (
@@ -14,6 +17,9 @@ function Page() {
       <TeachingModels />
       <Entertainments />
       <Subscribe />
+      <Teachers />
+      <SelectLanguage />
+      <Sponsors />
     </>
   );
 }
