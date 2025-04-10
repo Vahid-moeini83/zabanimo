@@ -1,14 +1,14 @@
 "use client";
 
 import classes from "./Intro.module.css";
+import Image from "next/image";
+import Button from "@/components/ui/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import Image from "next/image";
-import Button from "@/components/ui/Button";
 import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
 
@@ -44,7 +44,9 @@ function Intro() {
           {[...Array(8)].map((_, index) => (
             <SwiperSlide key={index} className={classes.slide}>
               <Image
-                src={`/intro/${index + 1}.webp`}
+                src={`/intro/${
+                  isInMobileSize ? `${index + 1}-mobile` : index + 1
+                }.webp`}
                 alt={`Slide ${index + 1}`}
                 fill
               />

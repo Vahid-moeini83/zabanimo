@@ -5,35 +5,29 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { teachers } from "@/utils/localData";
 import { Autoplay } from "swiper/modules";
-import { useMediaQuery } from "@mui/material";
 
 function Teachers() {
-  const isInLaptopSize = useMediaQuery(
-    "(min-width: 1025px) and (max-width: 1280px)"
-  );
-  const isInTabletSize = useMediaQuery(
-    "(min-width: 769px) and (max-width: 1024px)"
-  );
-  const isInMobileSize = useMediaQuery("(max-width: 768px)");
-  const isInMobileSmSize = useMediaQuery("(max-width: 480px)");
-
   return (
     <section className={classes.wrapper}>
       <h2>اساتید</h2>
       <div className={classes.slider}>
         <Swiper
           modules={[Autoplay]}
-          slidesPerView={
-            isInMobileSmSize
-              ? 2
-              : isInMobileSize
-              ? 2
-              : isInTabletSize
-              ? 3
-              : isInLaptopSize
-              ? 4
-              : 5
-          }
+          slidesPerView={1.5}
+          breakpoints={{
+            480: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+            1280: {
+              slidesPerView: 5,
+            },
+          }}
           spaceBetween={28}
           loop
           centeredSlides
@@ -57,29 +51,21 @@ function Teachers() {
                 <div className={classes.details}>
                   <span>{teacher.xpYear} سال تجربه آموزش</span>
                   <div className={classes.languages}>
-                    {teacher.languages.length !== 1 ? (
-                      teacher.languages.map((language) => (
-                        <div className={classes.language} key={language}>
-                          <Image
-                            src="/icons/flag.svg"
-                            width={isInMobileSmSize ? 20 : 24}
-                            height={isInMobileSmSize ? 20 : 24}
-                            alt="flag"
-                          />
-                          <span>{language}</span>
-                        </div>
-                      ))
-                    ) : (
-                      <div className={classes.language}>
+                    {teacher.languages.map((language) => (
+                      <div className={classes.language} key={language}>
                         <Image
                           src="/icons/flag.svg"
                           width={24}
                           height={24}
                           alt="flag"
                         />
-                        <span>مدرس زبان {teacher.languages[0]}</span>
+                        <span>
+                          {teacher.languages.length === 1
+                            ? `مدرس زبان ${language}`
+                            : language}
+                        </span>
                       </div>
-                    )}
+                    ))}
                   </div>
                 </div>
               </div>

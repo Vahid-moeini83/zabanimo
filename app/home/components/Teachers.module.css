@@ -80,16 +80,6 @@
   color: var(--color-white-800);
 }
 
-@media only screen and (max-width: 480px) {
-  .details > span {
-    font-size: 16px;
-  }
-
-  .language {
-    font-size: 16px;
-  }
-}
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .bottom h4 {
     font-size: 22px;
@@ -110,7 +100,16 @@
     font-size: 20px;
   }
 
+  .details > span {
+    font-size: 16px;
+  }
+
   .language {
     font-size: 14px;
+  }
+
+  .language img {
+    width: 20px;
+    height: 20px;
   }
 }
