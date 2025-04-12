@@ -15,7 +15,7 @@ function TeachingModels() {
 
           return (
             <div className={classes.box} key={model.name}>
-              <Link href="#">
+              <Link href="">
                 <div className={classes.card}>
                   <div className={classes.banner}>
                     <div className={classes.front}>
