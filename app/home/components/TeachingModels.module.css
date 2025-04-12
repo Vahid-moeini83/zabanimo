@@ -110,29 +110,29 @@
   text-shadow: 0px 0px 42px rgba(0, 0, 0, 0.51);
 }
 
-@media only screen and (min-width: 769px) {
-  @keyframes custom-flip {
-    0% {
-      transform: translateX(0) rotateY(0) scale(1);
-      transform-origin: 100% 50%;
-    }
-    50% {
-      transform: translateX(20%) rotateY(-90deg) scale(1.05);
-      transform-origin: 50% 50%;
-    }
-    100% {
-      transform: translateX(100%) rotateY(-180deg) scale(1);
-      transform-origin: 0% 50%;
-    }
-  }
+/* Set cards animation */
 
-  .card:hover .banner {
-    transform: rotateY(-180deg);
+@keyframes custom-flip {
+  0% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 100% 50%;
   }
+  50% {
+    transform: translateX(20%) rotateY(-90deg) scale(1.05);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: translateX(100%) rotateY(-180deg) scale(1);
+    transform-origin: 0% 50%;
+  }
+}
 
-  .card:hover .back .watch {
-    animation: custom-flip 0.6s reverse linear both;
-  }
+.card:hover .banner {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back .watch {
+  animation: custom-flip 0.6s reverse linear both;
 }
 
 @media only screen and (max-width: 1024px) {
