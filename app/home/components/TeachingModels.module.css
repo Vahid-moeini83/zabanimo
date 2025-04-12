@@ -157,24 +157,17 @@
   }
 
   .bottomText {
-    margin-top: 0;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--rounded-lg);
-    background-color: color-mix(
-      in srgb,
-      var(--color-black-800) 50%,
-      transparent
-    );
+    margin-top: 8px;
+  }
+
+  .watch {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .grid {
-    row-gap: 16px;
+    row-gap: 24px;
     column-gap: 16px;
   }
 
@@ -185,7 +178,7 @@
 
 @media only screen and (max-width: 480px) {
   .grid {
-    row-gap: 12px;
+    row-gap: 20px;
     column-gap: 12px;
   }
 
@@ -196,5 +189,9 @@
   .centeredText,
   .bottomText {
     font-size: 16px;
+  }
+
+  .bottomText {
+    margin-top: 6px;
   }
 }
